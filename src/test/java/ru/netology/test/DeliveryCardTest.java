@@ -1,15 +1,15 @@
-package ru.netology;
+package ru.netology.test;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import ru.netology.utils.DataGenerator;
-import ru.netology.utils.OrderInfo;
-import ru.netology.utils.OrderPage;
+import ru.netology.data.DataGenerator;
+import ru.netology.page.OrderInfo;
+import ru.netology.page.OrderPage;
 
 public class DeliveryCardTest {
-    private final OrderPage orderPage = new OrderPage();
+    private OrderPage orderPage;
 
     @BeforeAll
     static void setUpAll() {
@@ -18,7 +18,7 @@ public class DeliveryCardTest {
 
     @BeforeEach
     void setUp() {
-        orderPage.open();
+        orderPage = new OrderPage();
     }
 
     @Test

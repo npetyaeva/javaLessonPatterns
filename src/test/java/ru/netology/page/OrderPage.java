@@ -1,4 +1,4 @@
-package ru.netology.utils;
+package ru.netology.page;
 
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
@@ -22,7 +22,7 @@ public class OrderPage {
     private final SelenideElement replanButton = $("[data-test-id='replan-notification'] .button .button__text");
     private final SelenideElement closeButton = $("[data-test-id='success-notification'] button");
 
-    public void open() {
+    public OrderPage() {
         Selenide.open(currentUrl);
     }
 

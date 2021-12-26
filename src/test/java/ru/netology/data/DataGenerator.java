@@ -1,6 +1,7 @@
-package ru.netology.utils;
+package ru.netology.data;
 
 import com.github.javafaker.Faker;
+import ru.netology.page.OrderInfo;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
